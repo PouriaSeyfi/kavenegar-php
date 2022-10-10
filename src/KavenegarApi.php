@@ -117,7 +117,7 @@ class KavenegarApi
             "message" => json_encode($message),
             "date" => $date,
             "type" => json_encode($type),
-            "localmessageid" => json_encode($localmessageid)
+            "localmessageids" => json_encode($localmessageid)
         );
         return $this->execute($path, $params);
     }
